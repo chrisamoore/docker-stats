@@ -1,0 +1,28 @@
+{
+  "name": "docker-stats",
+  "version": "1.0.0",
+  "description": "Promise based node wrapper for `docker stats --no-stream`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "docker-stats.js",
+    "index.js",
+    "formatter.js"
+  ],
+  "keywords": [ "docker" ],
+  "author": {
+    "name" : "Christopher A. Moore",
+    "email" : "chris@camdesigns.net"
+  },
+  "engines": {
+    "node" : ">=6.0.0"
+  },
+  "licenses" : [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
+}
