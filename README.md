@@ -11,7 +11,7 @@ Docker-Stats-Promise
 
 ### All
 ```js
-var DockerStats = require('docker-stats');
+var DockerStats = require('docker-stats-promise');
 
 const dockerStats = new DockerStats();
 dockerStats.execute().then(data => {
