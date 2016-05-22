@@ -3,11 +3,15 @@ const Formatter = require('./formatter');
 
 class DockerStats {
 
-  execute() {
+  execute(container = null) {
     return new Promise((resolve, reject) => {
       const containers = [];
 
-      exec('docker stats --no-stream', (error, stdout, stderr) => {
+      const command = (container) ?
+        `docker stats --no-stream ${container}` :
+        `docker stats --no-stream`;
+
+      exec(command, (error, stdout, stderr) => {
         if (error) {
           return reject(error);
         }
@@ -21,7 +25,7 @@ class DockerStats {
           }
         });
 
-        return resolve(containers);
+        return resolve((container) ? containers[0] : containers);
       });
     });
   }
