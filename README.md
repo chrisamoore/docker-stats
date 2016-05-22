@@ -21,7 +21,7 @@ dockerStats.execute().then(data => {
 
 ### By Container Hash
 ```js
-var DockerStats = require('docker-stats');
+var DockerStats = require('docker-stats-promise');
 
 const dockerStats = new DockerStats();
 dockerStats.execute('a277c79d23e3').then(data => {
@@ -31,7 +31,7 @@ dockerStats.execute('a277c79d23e3').then(data => {
 
 ### By Container Name
 ```js
-var DockerStats = require('docker-stats');
+var DockerStats = require('docker-stats-promise');
 
 const dockerStats = new DockerStats();
 dockerStats.execute('mango').then(data => {
