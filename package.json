@@ -1,5 +1,5 @@
 {
-  "name": "docker-stats",
+  "name": "docker-stats-promise",
   "version": "1.0.0",
   "description": "Promise based node wrapper for `docker stats --no-stream`",
   "main": "index.js",

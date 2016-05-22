@@ -1,9 +1,13 @@
-Docker-Stats
+Docker-Stats-Promise
 ===
 
 > Promise based node wrapper for `docker stats --no-stream`
 
 ## Usage
+
+### Install
+
+`npm i -S docker-stats-promise`
 
 ### All
 ```js
