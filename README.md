@@ -33,6 +33,7 @@ const dockerStats = new DockerStats();
 dockerStats.execute('mango').then(data => {
   console.log(data);
 });
+```
 
 ## Output
 
